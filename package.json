@@ -1,0 +1,10 @@
+{
+  "name": "new-website-main",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "npm --prefix frontend start",
+    "install": "npm --prefix frontend install --legacy-peer-deps",
+    "dev": "npm run start"
+  }
+}
