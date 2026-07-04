@@ -23,7 +23,7 @@ const Login = () => {
     <div className="min-h-screen grid grid-cols-1 lg:grid-cols-2 bg-slate-50">
       <div className="relative hidden lg:flex flex-col justify-between bg-[#0a2540] text-white p-12 overflow-hidden">
         <div className="absolute inset-0 opacity-25">
-          <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=80" alt="" className="w-full h-full object-cover" />
+          <img src="/6.jpg" alt="" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-b from-[#0a2540]/80 to-[#0a2540]" />
         </div>
         <div className="relative">

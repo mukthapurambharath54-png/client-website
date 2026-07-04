@@ -19,7 +19,7 @@ const Products = () => {
       <PageHero
         title="Our Products"
         subtitle="Comprehensive specialty pharmaceutical portfolio supporting hospitals, healthcare institutions, and patients."
-        image="https://images.unsplash.com/photo-1583912086096-8c60d75a53f9?auto=format&fit=crop&w=1920&q=80"
+        image="/2.jpg"
       />
 
       <section className="section-padding bg-white">

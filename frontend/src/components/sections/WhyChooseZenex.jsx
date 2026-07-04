@@ -18,7 +18,7 @@ const WhyChooseZenex = () => {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-xl">
               <img
-                src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=1200&q=80"
+                src="/women2.png"
                 alt="Zenex International leadership"
                 className="w-full aspect-[4/5] object-cover"
               />

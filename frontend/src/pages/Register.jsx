@@ -251,7 +251,7 @@ const Register = () => {
         <section className="relative overflow-hidden">
           <div className="absolute inset-0">
             <img
-              src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=1920&q=80"
+              src="/7.jpg"
               alt=""
               className="w-full h-full object-cover opacity-30"
             />

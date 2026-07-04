@@ -59,7 +59,7 @@ const Contact = () => {
     <>
       <PageHero
         title="Contact"
-        image="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1920&q=80"
+        image="/5.jpg"
       />
 
       {/* Form section */}

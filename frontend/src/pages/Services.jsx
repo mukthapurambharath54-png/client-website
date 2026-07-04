@@ -10,7 +10,7 @@ const Services = () => (
     <PageHero
       title="Our Services"
       subtitle="Delivering specialty pharmaceuticals, critical care medicines, vaccines, and cold-chain logistics across Bengaluru."
-      image="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?auto=format&fit=crop&w=1920&q=80"
+      image="/3.jpg"
     />
     <section className="section-padding bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">

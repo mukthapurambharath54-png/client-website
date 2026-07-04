@@ -8,7 +8,7 @@ const Awards = () => (
     <PageHero
       title="Awards & Media Recognition"
       subtitle="At Zenex International, our journey has been defined by a commitment to quality, reliability, and service excellence — recognized by industry forums and publications."
-      image="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&w=1920&q=80"
+      image="/women3.png"
     />
 
     <AwardsCarousel />

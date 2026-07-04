@@ -9,7 +9,7 @@ const Blog = () => (
     <PageHero
       title="Insights & Stories"
       subtitle="Articles, ideas, and updates from the Zenex team on pharmaceutical distribution and healthcare logistics."
-      image="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1920&q=80"
+      image="/1.jpg"
     />
     <section className="section-padding bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">

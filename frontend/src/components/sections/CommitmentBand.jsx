@@ -29,7 +29,7 @@ const CommitmentBand = () => {
             <div className="lg:col-span-2">
               <div className="relative rounded-2xl overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1200&q=80"
+                  src="/women3.png"
                   alt="Business meeting"
                   className="w-full aspect-[4/3] object-cover"
                 />

@@ -22,33 +22,33 @@ const Navbar = () => {
   }, [location.pathname]);
 
   return (
-    <header className="fixed top-3 sm:top-5 left-0 right-0 z-50 flex justify-center px-3 sm:px-6">
+    <header className="fixed top-3 sm:top-5 left-0 right-0 z-50 px-3 sm:px-6">
       <motion.nav
         initial={{ y: -30, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
-        className={`w-full max-w-6xl rounded-full backdrop-blur-xl transition-all duration-300 border ${
+        className={`mx-auto w-full max-w-7xl rounded-full backdrop-blur-xl transition-all duration-300 border ${
           scrolled
-            ? 'bg-white/85 border-slate-200 shadow-lg'
-            : 'bg-white/70 border-white/40 shadow-md'
+            ? 'bg-white/90 border-slate-200 shadow-lg'
+            : 'bg-white/75 border-white/40 shadow-md'
         }`}
       >
-        <div className="flex items-center justify-between px-4 sm:px-6 py-2.5">
+        <div className="flex items-center justify-between px-4 sm:px-6 py-2">
           <Link to="/" className="flex items-center gap-2 shrink-0" aria-label="Zenex International home">
-            <Logo size="md" className="shrink-0" />
+            <Logo size="sm" className="shrink-0" />
           </Link>
 
-          <ul className="hidden lg:flex items-center gap-1">
+          <ul className="hidden lg:flex items-center gap-3">
             {navLinks.map((link) => (
               <li key={link.name}>
                 <NavLink
                   to={link.path}
                   end={link.path === '/'}
                   className={({ isActive }) =>
-                    `px-3.5 py-2 rounded-full text-[15px] font-medium transition-colors ${
+                    `px-3 py-2 rounded-full text-sm font-medium transition-colors ${
                       isActive
-                        ? 'text-blue-900'
-                        : 'text-slate-700 hover:text-blue-900'
+                        ? 'text-blue-900 bg-blue-50'
+                        : 'text-slate-700 hover:text-blue-900 hover:bg-slate-100'
                     }`
                   }
                 >
@@ -61,7 +61,7 @@ const Navbar = () => {
           <div className="flex items-center gap-2">
             <Link
               to="/login"
-              className="hidden sm:inline-flex items-center gap-1.5 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold text-sm px-5 py-2.5 rounded-full transition-all hover:shadow-lg hover:shadow-emerald-500/30"
+              className="hidden sm:inline-flex items-center gap-1.5 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold text-sm px-4 py-2 rounded-full transition-all hover:shadow-lg hover:shadow-emerald-500/30"
             >
               Login
               <ArrowUpRight className="w-4 h-4" />
@@ -69,7 +69,7 @@ const Navbar = () => {
             <button
               type="button"
               onClick={() => setMobileOpen((v) => !v)}
-              className="lg:hidden inline-flex items-center justify-center w-10 h-10 rounded-full text-slate-800 hover:bg-slate-100"
+              className="lg:hidden inline-flex items-center justify-center w-11 h-11 rounded-full text-slate-800 hover:bg-slate-100"
               aria-label="Open menu"
             >
               {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}

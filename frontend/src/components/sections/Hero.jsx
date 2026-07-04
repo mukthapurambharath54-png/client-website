@@ -10,7 +10,7 @@ const Hero = () => {
       {/* background image */}
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=1920&q=80"
+          src="/4.jpg"
           alt="Pharmaceutical cold chain warehouse"
           className="w-full h-full object-cover opacity-50"
         />

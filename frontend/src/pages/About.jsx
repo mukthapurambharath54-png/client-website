@@ -27,7 +27,7 @@ const About = () => (
     <PageHero
       title="About Us"
       subtitle="More than two decades of delivering quality pharmaceutical distribution and supporting healthcare providers with reliability, integrity, and commitment."
-      image="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1920&q=80"
+      image="/women.png"
     />
 
     {/* Founder section */}
@@ -53,7 +53,7 @@ const About = () => (
           >
             <div className="relative rounded-3xl overflow-hidden shadow-xl bg-slate-100">
               <img
-                src="https://framerusercontent.com/images/RUlEt6APicEpAVj2DAYA9RlrZPY.png?width=1122&height=1402"
+                src="/women2.png"
                 alt="V V Mannapur — Founder, Zenex International"
                 className="w-full aspect-[4/5] object-cover"
               />
@@ -162,7 +162,7 @@ const About = () => (
             transition={{ duration: 0.6 }}
           >
             <img
-              src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80"
+              src="/women.png"
               alt="Zenex International team meeting"
               className="w-full aspect-[4/3] object-cover rounded-3xl shadow-xl"
             />
