@@ -3,8 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "npm --prefix frontend start",
-    "install": "npm --prefix frontend install --legacy-peer-deps",
-    "dev": "npm run start"
+    "install": "npm --prefix frontend install --legacy-peer-deps && npm --prefix backend_node install",
+    "build": "npm --prefix frontend run build",
+    "prestart": "npm run build",
+    "start": "npm --prefix backend_node start",
+    "dev": "npm --prefix frontend start"
   }
 }

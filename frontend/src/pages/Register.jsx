@@ -500,8 +500,8 @@ const Register = () => {
                 />
                 <span className="text-sm text-slate-700 leading-relaxed">
                   I confirm that all information provided is accurate and agree to Zenex International&rsquo;s{' '}
-                  <a href="#" className="text-blue-700 font-semibold hover:underline">Terms &amp; Conditions</a> and{' '}
-                  <a href="#" className="text-blue-700 font-semibold hover:underline">Privacy Policy</a>.
+                  <a href="/terms-and-conditions" className="text-blue-700 font-semibold hover:underline">Terms &amp; Conditions</a> and{' '}
+                  <a href="/privacy-policy" className="text-blue-700 font-semibold hover:underline">Privacy Policy</a>.
                 </span>
               </label>
 

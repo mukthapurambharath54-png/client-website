@@ -10,6 +10,8 @@ import Blog from './pages/Blog';
 import BlogDetail from './pages/BlogDetail';
 import Register from './pages/Register';
 import Login from './pages/Login';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsConditions from './pages/TermsConditions';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 import { Toaster } from './components/ui/toaster';
@@ -31,6 +33,8 @@ function App() {
           </Route>
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-and-conditions" element={<TermsConditions />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

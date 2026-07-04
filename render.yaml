@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: zenex-backend
+    env: node
+    plan: starter
+    buildCommand: "npm install && npm start"
+    startCommand: "npm start"
+    envVars:
+      - key: PORT
+        value: "4000"
+      - key: SPREADSHEET_ID
+        value: ""
+      - key: SHEET_NAME
+        value: "Sheet1"
+      - key: GOOGLE_SA_FILE
+        value: ""
+      - key: GOOGLE_SA_JSON
+        value: ""
+    rootDir: backend_node

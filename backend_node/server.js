@@ -1,12 +1,18 @@
 const express = require('express');
 const cors = require('cors');
 const fs = require('fs');
+const path = require('path');
 const { google } = require('googleapis');
 require('dotenv').config();
 
 const app = express();
 app.use(cors());
 app.use(express.json({ limit: '1mb' }));
+
+const buildPath = path.join(__dirname, '../frontend/build');
+if (fs.existsSync(buildPath)) {
+  app.use(express.static(buildPath));
+}
 
 const SPREADSHEET_ID = process.env.SPREADSHEET_ID;
 const GOOGLE_SA_FILE = process.env.GOOGLE_SA_FILE;
@@ -227,6 +233,19 @@ app.get('/health', (req, res) => res.json({ status: 'ok' }));
 app.get('/api/last', (req, res) => {
   if (!lastPayload) return res.status(404).json({ error: 'no payload received yet' });
   return res.json({ lastPayload });
+});
+
+app.get('*', (req, res) => {
+  if (req.path.startsWith('/api') || req.path === '/health') {
+    return res.status(404).json({ error: 'Not Found' });
+  }
+
+  const indexPath = path.join(buildPath, 'index.html');
+  if (fs.existsSync(indexPath)) {
+    return res.sendFile(indexPath);
+  }
+
+  return res.status(404).send('Frontend build not found. Run npm run build from the root.');
 });
 
 const PORT = process.env.PORT || 4000;
