@@ -212,7 +212,7 @@ export const blogPosts = [
     title: 'Navigating change: strategies for successful changes',
     excerpt:
       'A practical guide for healthcare distribution leaders to manage change, drive growth, and stay resilient amid evolving market dynamics.',
-    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80',
+    image: '/4.jpg',
     author: 'Editorial Team',
     category: 'Strategy',
   },
@@ -223,7 +223,7 @@ export const blogPosts = [
     title: 'Creating a culture of consistent learning and growth',
     excerpt:
       'Effective leadership shapes culture. Discover how continuous learning fuels innovation in pharmaceutical distribution.',
-    image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=80',
+    image: '/5.jpg',
     author: 'Editorial Team',
     category: 'Leadership',
   },
@@ -234,7 +234,7 @@ export const blogPosts = [
     title: 'The role of technology in crafting customer experience',
     excerpt:
       'Technology is transforming healthcare logistics. Learn how digital infrastructure improves customer trust and operational efficiency.',
-    image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200&q=80',
+    image: '/6.jpg',
     author: 'Editorial Team',
     category: 'Technology',
   },

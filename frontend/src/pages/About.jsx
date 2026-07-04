@@ -53,7 +53,7 @@ const About = () => (
           >
             <div className="relative rounded-3xl overflow-hidden shadow-xl bg-slate-100">
               <img
-                src="/women2.png"
+                src="/founder.jpg"
                 alt="V V Mannapur — Founder, Zenex International"
                 className="w-full aspect-[4/5] object-cover"
               />
